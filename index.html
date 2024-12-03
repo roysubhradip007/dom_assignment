@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 35px;
+            font-weight: 900;
+        }
+        .main{
+            padding: 15px 20px;
+            height: 25%;
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 0.2px solid rgb(172, 169, 169);
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .btn{
+            padding: 10px 20px;
+            border: 0.5px solid;
+            border-radius: 5px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .two{
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .msg{
+            border: 1px solid;
+            height: 50px;
+            width: 50px;
+        }
+        .msg{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Counter App</h1>
+        <div class="two">
+            <button class="dec btn">Decreament by 1</button>
+            <div class="msg">0</div>
+            <button class="inc btn">Increament by 1</button>
+        </div>
+        <button class="reset btn">Reset Value</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
